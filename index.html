@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .chat-container {
+            width: 320px;
+            background-color: #e5ddd5;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 14px;
+        }
+        .chat-header {
+            background-color: #075e54;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .chat-header img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .bar{
+            margin-left: 100px;
+            
+        } 
+        #o{
+            margin-right : 10px;
+        }  
+        #c{
+            margin-right : 10px;
+        }  
+        #menu{
+            margin-right : 10px;
+        }   
+        .chat-box {
+            padding: 10px;
+            height: 400px;
+            overflow-y: auto;
+        }
+        .message {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-radius: 10px;
+            max-width: 75%;
+        }
+        .received {
+            background-color: white;
+            align-self: flex-start;
+
+        }
+        .sent {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+            text-align: right;
+            align-items: end;
+            margin-left: 50px;
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: white;
+            
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            
+            
+        }
+        .chat-input button {
+            background-color: #25d366;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            color: white;
+            
+
+        }
+        #link{
+            margin-left: 2px;
+            bottom: 0px;
+            text-align: center;
+            
+                      
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="c:\Users\user\OneDrive\Pictures\dudu.jpg" alt="Profile">
+            DUDU😍😍
+        <div class=" bar">
+            <i class="fa-solid fa-video" id="o"></i>
+            <i class="fa-solid fa-phone" id="c"></i>
+            <i class="fa-solid fa-ellipsis-vertical" id="menu"></i>
+        </div>
+        </div>
+        <div class="chat-box">
+            <div class="message received">Hello Bubu👋</div>
+            <div class="message received">wt r u dng</div>
+
+            <div class="message sent">Nothing Dudu✔✔</div>
+            <div class="message sent">im watching ur photos😍✔✔</div>
+            
+            <div class="message received">Oh my GOD is this real😍</div>
+            <div class="message received">gud keep it up👋</div>
+           
+            <div class="message sent">yesss😍 ✔✔</div>
+            <div class="message sent">wt r u dng dudu ✔✔</div>
+
+            
+            
+            <div class="message received">Nothing bubu</div>
+            <div class="message received">Bubu i wanna tell u something</div>
+
+            <div class="message sent">yes tell me ✔✔</div>
+            <div class="message received">Im hungry !</div>
+            <div class="message received">I wanna eat something👋</div>
+           
+            <div class="message sent">What do u want dudu✔✔</div>
+            <div class="message sent">Can i order something for uhh✔✔</div>
+           
+            <div class="message received">I want Biriyani</div>
+           
+            
+            <div class="message sent">Okay i will order wait✔✔</div>
+           
+            <div class="message received">Thank you bubu</div>
+            <div class="message received">I 😍 u bubu</div>
+            
+            <div class="message sent">😍😍😍✔✔</div>
+            <div class="message sent">okay i will msg u later✔✔</div>
+            <div class="message received">okay bye bubu</div>
+        </div>
+        <div class="chat-input">
+            <i class="fa-solid fa-paperclip" id="link"></i>
+            <input type="text" placeholder="Message">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
